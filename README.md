@@ -1,6 +1,7 @@
 # PCVT
-![](https://github.com/umogal/Payment-Card-Validation-Tool/blob/dev/splash.png)
 
+
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/96d00249-8f78-451e-b03d-bc1c5720e82e" />
 
 PCVTAn offline Multi-Layer Card Validation Engine that performs Luhn verification, issuer identification, and heuristic pattern analysis to flag potentially invalid card numbers.Cli[link] | Library[link]Features:Offline & Fast: Sub-microsecond validation using pure C11 without network calls or external libs.Zero Heap Allocations: Runs strictly with $O(n)$ time and $O(1)$ space memory footprint.Safe Input Processing: Direct character processing prevents integer overflows from long input strings.Auto Cleaning: Handles spaces and hyphens automatically while stripping out non-digit junk.Detailed Error Codes: Gives exact status returns instead of a simple pass/fail boolean.Language Flexible: Includes raw C library, standalone CLI tool, and Python ctypes bindings.Note :This project is an independent, open-source academic tool created for educational and research purposes. It is not affiliated with, endorsed by, or associated with Visa, Mastercard, or any other payment network.UsageCliStandalone CLI ExampleBuild the CLI binary with standard GCC/Clang:Bashgcc -O3 -Iinclude src/cardval.c examples/cli.c -o pcvt_cli
 Run validation directly from command line arguments:Bash./pcvt_cli "4532-0151-1283-0366"
